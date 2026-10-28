@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Car details | CarDock</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <script defer src="/js/app.js"></script>
+</head>
+<body>
+<header class="site-header"><a class="brand" href="/">CarDock<span>.</span></a><nav><a href="/">Browse cars</a><a href="/my-bookings.html">My appointments</a><a href="/login.html">Log in</a></nav></header>
+<main class="page-shell narrow">
+    <a class="back-link" href="/">← Back to cars</a>
+    <p id="page-message" class="message" aria-live="polite"></p>
+    <article id="car-detail" class="detail-card"></article>
+    <section class="form-card">
+        <p class="eyebrow">See it in person</p><h2>Book an appointment</h2>
+        <p class="muted">Choose a future date and time for an inspection or test drive.</p>
+        <form id="booking-form">
+            <label>Appointment time<input id="appointment-time" name="appointmentAt" type="datetime-local" required></label>
+            <button class="button" type="submit">Request appointment</button>
+        </form>
+        <p id="booking-message" class="message" aria-live="polite"></p>
+    </section>
+</main>
+<footer><span>CarDock</span><span>Appointments are not sales or payment reservations.</span></footer>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CarDock | Find your next car</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <script defer src="/js/app.js"></script>
+</head>
+<body>
+<header class="site-header">
+    <a class="brand" href="/">CarDock<span>.</span></a>
+    <nav aria-label="Main navigation">
+        <a href="/">Browse cars</a>
+        <a href="/my-bookings.html">My appointments</a>
+        <a href="/admin.html">Admin</a>
+        <a href="/login.html">Log in</a>
+        <a class="button button-small" href="/register.html">Create account</a>
+    </nav>
+</header>
+<main class="page-shell">
+    <section class="hero">
+        <p class="eyebrow">A better way to find your next car</p>
+        <h1>Find the right car.<br><span>Take your time.</span></h1>
+        <p>Browse quality pre-owned cars and book an appointment to see one in person.</p>
+        <a class="button" href="#inventory">Explore available cars</a>
+    </section>
+    <section id="inventory" class="section">
+        <div class="section-heading">
+            <div><p class="eyebrow">The collection</p><h2>Cars available now</h2></div>
+            <p class="muted">Sample inventory from the local database setup.</p>
+        </div>
+        <form id="car-search" class="filter-panel">
+            <label for="car-brand">Search by brand</label>
+            <input id="car-brand" type="text">
+            <button class="button" type="submit">Search</button>
+        </form>
+        <p id="search-result" class="message" aria-live="polite"></p>
+        <div id="car-list" class="car-grid"></div>
+    </section>
+</main>
+<footer><span>CarDock</span><span>Appointments are for inspections or test drives, not purchases.</span></footer>
+</body>
+</html>
